@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria Gourmet IANES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Doceria Gourmet IANES</h1>
+    </header>
+
+    <!-- LOGIN -->
+    <section id="login-section">
+        <h2>Login</h2>
+
+        <form id="login-form">
+            <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+            >
+
+            <button type="submit">
+                Entrar
+            </button>
+        </form>
+    </section>
+
+    <!-- HOME -->
+    <section id="home-section" style="display: none;">
+
+        <div class="topo-home">
+            <h2>Gerenciamento de Doces</h2>
+
+            <button id="btn-logout">
+                Sair
+            </button>
+        </div>
+
+        <!-- CADASTRO -->
+        <div class="card">
+            <h3>Cadastrar Doce</h3>
+
+            <form id="doce-form">
+
+                <input
+                    type="text"
+                    id="nomeDoce"
+                    placeholder="Nome do doce"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="precoDoce"
+                    placeholder="Preço"
+                    step="0.01"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="quantidadeDoce"
+                    placeholder="Quantidade"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="validadeDoce"
+                    required
+                >
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+        </div>
+
+        <!-- PESQUISA -->
+        <div class="card">
+
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar doce..."
+            >
+
+            <button id="ordenarAZ">
+                Ordenar A-Z
+            </button>
+
+            <button id="ordenarZA">
+                Ordenar Z-A
+            </button>
+
+        </div>
+
+        <!-- LISTAGEM -->
+        <div class="card">
+            <h3>Doces Cadastrados</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Validade</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaDoces">
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
