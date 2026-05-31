@@ -1,0 +1,11 @@
+levantamento de requisitos - 50 minutos
+
+modelagem de dados - 1 hora e 9 minutos
+
+criação do banco de dados com inserts - 32 minutos
+
+criação do plano de teste - 16 minutos
+
+criação do backend - 2 horas e 19 minutos
+
+criação do frontend - 38 minutos
